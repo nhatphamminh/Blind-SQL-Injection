@@ -1,4 +1,4 @@
-# Blind-SQL-Injection
+# Blind-SQL-Injection 
 This repo is explain how hackers attack your websites by SQL injection or Blind SQL injection
 
 Hi everyone, i want to show to you that how a hacker inject or bypass into your website or your accounts by some simple SQL statements
