@@ -1,13 +1,34 @@
-# Blind-SQL-Injection 
-This repo is explain how hackers attack your websites by SQL injection or Blind SQL injection
+# Blind SQL Injection Demonstration
 
-Hi everyone, i want to show to you that how a hacker inject or bypass into your website or your accounts by some simple SQL statements
-The website i use to perform is overthewire.com
-So the lesson after this course is update your password at least 6 months anually and it should contain special digits like ! @ # $ % ^ & * ( ) so hackers may took a lot of times to bypass by brute force attack.
- 
-In this workspace i will use python (python3 recommended) to write an automate attacking srcipt(brute force) for passing to the level 16 of natas
 
-You can download python for coding at https://python.org
-You can use python or any other language you want that support the request library of python
-##
-**WARNING: This is only for education purpose only, am not take any responsible if you manipulate it in a wrong way!**
+
+## Overview
+This repository demonstrates how attackers exploit **SQL Injection (SQLi)** and **Blind SQL Injection** vulnerabilities to bypass authentication or extract sensitive data from web applications. 
+
+Specifically, this project features an automated Python script designed to perform a brute-force attack to solve **Level 16 of the Natas wargame** hosted on [OverTheWire](https://overthewire.org/wargames/natas/). 
+
+## Prerequisites
+To run the automated scripts in this repository, you will need:
+* **[Python 3.x](https://www.python.org/downloads/)**
+* The `requests` library
+
+You can install the required library using pip:
+```bash
+pip install requests
+```
+
+## Usage
+*(You can add instructions here on how to run your script, e.g.:)*
+```bash
+python3 attack.py
+```
+
+## Security Recommendations & Lessons Learned
+Through exploiting these vulnerabilities, we highlight the importance of secure coding practices and strong access controls. To protect your web applications and accounts:
+
+1. **Use Parameterized Queries:** Always use prepared statements (PDO, MySQLi) instead of directly concatenating user input into SQL queries to prevent SQLi completely.
+2. **Strong Password Policies:** Implement strong password requirements. Passwords should contain special characters (e.g., `! @ # $ % ^ & * ( )`) and sufficient length to increase the entropy, making brute-force and dictionary attacks computationally unfeasible.
+3. **Regular Updates:** Encourage or enforce periodic password changes (at least every 6 months) for critical accounts.
+
+
+> **⚠️ DISCLAIMER:** This repository is for **educational purposes only**. The scripts and concepts provided here are intended strictly for learning web security and ethical hacking. The author is not responsible for any misuse or illegal activities performed with this code.
